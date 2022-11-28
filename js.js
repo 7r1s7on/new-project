@@ -31,16 +31,56 @@ const arrowFunc = () => {
 let str = 'a string';
 
 str.toUpperCase(1,2);
+
+//function that finds the sum of the dividers of 3 and 5
 function solution(number){
-    if (number < 0){
-      return 0;
+  let result = 0;
+    for (let i = 1; i <= number; i++){
+      if(i % 3 == 0 || i % 5 == 0){
+        result += i;
+      }
     }
-    let sum = 0;
-    for (let i = 3; i < number; i+3){
-      sum += i;
-    }
-    for (let j = 5; i < number; j+5){
-      sum += j;
-    }
-    return sum;
+    return result;
   }
+
+const complexArr = [
+  {
+    firstName: 'Bob',
+    secondName: 'Smith'
+  },
+  {
+    firstName: 'Alice',
+    secondName: 'Smith'
+  },
+  {
+    firstName: 'Jon',
+    secondName: 'Doe'
+  }
+];
+
+//returns the index of the object
+complexArr.findIndex((arrItem) => {
+  return arrItem.lastname !== 'Smith';
+})
+
+const blogPost = [
+  {
+    title: 'How to use map() function',
+    category: 'uncategorized'
+  },
+  {
+    title: 'What is JavaScript?',
+    category: 'uncategorized'
+  },
+  {
+    title: 'Why are you crazy enough to learn to code?',
+    category: 'uncategorized'
+  }
+]
+
+//changes everything in 'category' 
+blogPost.map(arrItem => {
+  arrItem.category = 'Web develelopment';
+  return arrItem;
+})
+
