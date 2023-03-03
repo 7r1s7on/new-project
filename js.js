@@ -84,3 +84,11 @@ blogPost.map(arrItem => {
   return arrItem;
 })
 
+
+let arr = [14,15,'dsf',56];
+
+for (let i = 0; i < arr.length; i++){
+  if (typeof i === Number){
+    return i;
+  }
+}
