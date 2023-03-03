@@ -76,7 +76,7 @@ const blogPost = [
     title: 'Why are you crazy enough to learn to code?',
     category: 'uncategorized'
   }
-]
+];
 
 //changes everything in 'category' 
 blogPost.map(arrItem => {
@@ -92,3 +92,25 @@ for (let i = 0; i < arr.length; i++){
     return i;
   }
 }
+
+let exists = false;
+arr.forEach((arrItem) => {
+  if (arrItem === 'dsf') {
+    exists = true;
+    return exists;
+  }
+})
+
+const exactTitle = blogPost.filter((arrItem) => {
+  if(arrItem.title == 'How to use map() function'){
+    return true;
+  }
+});
+
+const arr2 = [1,2,3,4,5,6,7];
+
+function reducerCallback(sum, arrItem){
+  return sum += arrItem;
+}
+
+const result = arr2.reduce(reducerCallback, 0);
