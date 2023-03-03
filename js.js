@@ -114,3 +114,4 @@ function reducerCallback(sum, arrItem){
 }
 
 const result = arr2.reduce(reducerCallback, 0);
+//for example I wrote some comments
