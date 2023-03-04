@@ -115,3 +115,27 @@ function reducerCallback(sum, arrItem){
 
 const result = arr2.reduce(reducerCallback, 0);
 //for example I wrote some comments
+
+Math.E;
+Math.PI;
+Math.floor;
+Math.ceil;
+Math.round;
+
+//error handling
+try {
+  const num = 10;
+  num.toUpperCase();
+} catch (e) {
+  if(e instanceof TypeError) {
+    console.log(e.message);
+  }
+}
+
+const myString = '30';
+const num1 = Number(myString) //it is fine
+const anotherString = 'something';
+const num2 = Number(anotherString); // won't work because string is string) and will give NaN
+
+let numm = null; //it has false value always
+let smth; //it will also have false value becuase it is not defined(undefined)
