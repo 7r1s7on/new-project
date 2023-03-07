@@ -139,3 +139,31 @@ const num2 = Number(anotherString); // won't work because string is string) and 
 
 let numm = null; //it has false value always
 let smth; //it will also have false value becuase it is not defined(undefined)
+
+function filterList(l){
+  return l.filter(arrItem => typeof arrItem === 'number');
+}
+
+//outputs the difference of 2 arrays
+function arrayDiff(a, b) {
+  if (a.length === 0){
+    return [];
+  }
+  if (b.length === 0) {
+    return a;
+  }
+  for (let i = 0; i < a.length; i++){
+    for (let j = 0; j < b.length; j++){
+      if (a[i] === b[j]){
+        a = a.filter(function(arrItem){
+          return arrItem !== b[j];
+        })
+      }
+    }
+  }
+  return a;
+}
+
+let string = '12315';
+//let Num = Number(string); let AnotherNum = +string; they are equal
+
