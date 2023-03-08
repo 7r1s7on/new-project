@@ -167,3 +167,7 @@ function arrayDiff(a, b) {
 let string = '12315';
 //let Num = Number(string); let AnotherNum = +string; they are equal
 
+//asdfsadfsdfasfdj;lkdsjflkjioetuwiurfngdkk
+//aksdjfkleituaiweitudkajffsd
+//asdjfoaiueiotupaijgd
+
