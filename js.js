@@ -143,15 +143,15 @@ let smth; //it will also have false value becuase it is not defined(undefined)
 function filterList(l){
   return l.filter(arrItem => typeof arrItem === 'number');
 }
-
+const name = 'adsfs';
 //outputs the difference of 2 arrays
 function arrayDiff(a, b) {
-  if (a.length === 0){
+  if (a.length === 0)
     return [];
-  }
-  if (b.length === 0) {
+  
+  if (b.length === 0) 
     return a;
-  }
+
   for (let i = 0; i < a.length; i++){
     for (let j = 0; j < b.length; j++){
       if (a[i] === b[j]){
@@ -166,8 +166,3 @@ function arrayDiff(a, b) {
 
 let string = '12315';
 //let Num = Number(string); let AnotherNum = +string; they are equal
-
-//asdfsadfsdfasfdj;lkdsjflkjioetuwiurfngdkk
-//aksdjfkleituaiweitudkajffsd
-//asdjfoaiueiotupaijgd
-

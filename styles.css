@@ -7,7 +7,12 @@ p{
 } */
 body{
     background-color: black;
+    color: yellow;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid white;
+    
 }
 *{
     color: white;
+    padding-left: 0.5cm;
 }
